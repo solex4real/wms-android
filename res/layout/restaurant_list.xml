@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/list1_row_selector"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+     >
+     <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+         >
+    
+    
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+ 
+    <!-- Restaurant Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textColor="#424242"
+        android:ellipsize="marquee"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginRight="4dp"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+ 
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#0277BD"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="4dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="@dimen/rating" />
+     
+    <!-- Address -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:maxLength="80"
+        android:ellipsize="marquee"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/address"
+        android:textSize="@dimen/address" />
+ 
+    <!-- Status -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/status"
+        android:textSize="@dimen/status" />
+    </RelativeLayout>
+ 
+</RelativeLayout>

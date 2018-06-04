@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <FrameLayout 
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                >
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:id="@+id/res_banner"
+                    android:scaleType="fitXY"
+                    android:alpha="80"
+                    android:layout_gravity="top"
+                    />
+                <FrameLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#80424242"
+                    android:layout_gravity="bottom"
+                    >
+                    <com.android.volley.toolbox.NetworkImageView 
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/res_logo"
+                        />
+                    <ImageView 
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/time_icon"
+                        android:tint="#FFFFFF"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="45dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/res_dates"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="45dp"
+                        />
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="100dp"
+                        android:id="@+id/res_type"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="10dp"
+                        />
+                </FrameLayout>
+                <ImageView 
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:tint="#80FFFFFF"
+                    android:alpha="20"
+                    android:src="@drawable/large_fav_icon"
+                    android:id="@+id/fav_icon"
+                    android:layout_gravity="right|top"
+                    />
+            </FrameLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FAFAFA"
+                android:id="@+id/servers_wrapper"
+                >
+                
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

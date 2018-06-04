@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+     >
+ <RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/list1_row_selector"
+     android:padding="10dp"
+     >
+   <com.whosmyserver.util.CircledNetworkImageView 
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:id="@+id/thumb"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="5dp"
+       />
+   
+   <ImageView 
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_alignParentRight="true"
+       android:id="@+id/availability"
+       android:visibility="gone"
+       android:src="@drawable/availability_icon"
+       android:tint="#BDBDBD"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="15dp"
+       android:layout_marginRight="5dp"
+       />
+   
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:layout_marginLeft="80dp"
+       android:layout_marginRight="30dp"
+       android:textStyle="bold"
+       android:id="@+id/server_name"
+       android:singleLine="true"
+       android:ellipsize="marquee"
+       android:textSize="18sp"
+       android:textColor="#424242"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:layout_marginLeft="80dp"
+       android:layout_marginRight="30dp"
+       android:text="Rating: "
+       android:textSize="16sp"
+       android:textColor= "#424242"
+       android:layout_marginTop="30dp"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:layout_marginLeft="140dp"
+       android:layout_marginRight="30dp"
+       android:text="5"
+       android:id="@+id/rating"
+       android:textSize="16sp"
+       android:textColor="#0277BD"
+       android:layout_marginTop="30dp"
+       />
+   </RelativeLayout>
+   <ImageView 
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:src="#E0E0E0"
+       android:id="@+id/divider"
+       android:layout_marginTop="70dp"
+       android:layout_marginLeft="65dp"
+       android:layout_alignParentBottom="true"
+       />
+   
+</RelativeLayout>
